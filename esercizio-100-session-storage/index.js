@@ -4,15 +4,15 @@ const value = "Marina"
 const sessionStorageManager = {
     save: (key, value) => {
         sessionStorage.setItem(key, value)
-        console.log("Valore salvato", value)
+        console.log("Valore salvato:", value)
     },
 
     retrieve: (key) => {
         const retrieve = sessionStorage.getItem(key)
         if(retrieve) {
-            console.log("Valore recuperato", retrieve )
+            console.log("Valore recuperato:", retrieve )
         } else {
-            console.log("Nessun valore trovato per la chiave", key)
+            console.log("Nessun valore trovato per la chiave:", key)
         }
     },
 
