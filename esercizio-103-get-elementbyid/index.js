@@ -1,2 +1,3 @@
-const paragrafo = document.getElementById("paragrafo")
+const paragrafo = document.getElementById("para")
 
+console.log(paragrafo)
