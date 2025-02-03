@@ -1,5 +1,6 @@
 const para = document.querySelector(".para")
-const btn = document.querySelector("#btn")
+const btn = document.createElement('button')
+btn.innerHTML = 'Cambia testo!';
 
 btn.addEventListener("click", () => {
     para.innerText = "Ciao mondo!!!!!!!"
@@ -9,3 +10,4 @@ btn.addEventListener("click", () => {
 
 })
 
+para.appendChild(btn)
